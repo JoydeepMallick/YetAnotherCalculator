@@ -8,11 +8,12 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="calculator">
-        
+
+    
+    <div id="calculator">    
         <!-- only the input element is readonly,cannot be edited -->
         <input type="text" id="display" value="0" readonly>
-        
+
 
         <div id="buttonstopress">
             <button id="allclear-btn" onclick="clearDisplay()">AC</button>
@@ -36,6 +37,7 @@
             <button onclick="appendToDisplay(3)">3</button>
             <button class="operator-btn"  onclick="appendToDisplay('+')">+</button>
 
+            <button onclick="appendToDisplay('00')">00</button>
             <button onclick="appendToDisplay(0)">0</button>
             <button onclick="appendToDisplay('.')">.</button>
 
