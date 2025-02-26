@@ -1,0 +1,99 @@
+body{
+    display: flex;
+    justify-content: center; /* horizontal alignment */
+    align-items: center; /* vertical alignment */
+    height: 100vh;
+    background-size: cover;
+    background-color: hsl(33, 11%, 80%);
+}
+
+#calculator{
+    background-color: hsla(166, 85%, 34%, 0.441);
+    border-radius: 30px;
+    max-width: 500px;/* if not set it will expand as per browser size */
+    overflow: hidden;/* to hide the very long equation in display */
+
+}
+
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 3rem;
+    background-color: hsla(107, 78%, 29%, 0.466);
+    border : none;
+}
+
+#buttonstopress{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap : 10px;
+    padding: 10px;
+}
+
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    border: none;
+    background-color: hsl(240, 28%, 46%);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* on hover change colo */
+button:hover {
+    background-color: hsl(240, 53%, 28%);
+}
+
+/* on click flash */
+button:active {
+    background-color: hsl(240, 53%, 50%);
+}
+
+
+
+.operator-btn{
+    background-color: hsl(38, 100%, 50%);
+}
+.operator-btn:hover{
+    background-color: hsl(38, 100%, 60%);
+}
+.operator-btn:active{
+    background-color: hsl(38, 100%, 30%);
+}
+
+
+#equals-btn{
+    background-color: hsl(118, 64%, 44%);
+}
+#equals-btn:hover{
+    background-color: hsl(118, 62%, 28%);
+}
+#equals-btn:active{
+    background-color: hsl(118, 62%, 50%);
+}
+
+
+
+#allclear-btn{
+    background-color: hsl(0, 100%, 41%);
+}
+#allclear-btn:hover{
+    background-color: hsl(0, 100%, 31%);
+}
+#allclear-btn:active{
+    background-color: hsl(0, 100%, 51%);
+}
+
+
+#delete-btn{
+    background-color: hsl(18, 100%, 50%);
+}
+#delete-btn:hover{
+    background-color: hsl(18, 100%, 40%);
+}
+#delete-btn:active{
+    background-color: hsl(18, 100%, 60%);
+}
